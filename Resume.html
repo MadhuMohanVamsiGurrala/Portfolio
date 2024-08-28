@@ -27,12 +27,15 @@
             border-top-right-radius: 10px;
         }
         .image {
-            border: 5px solid black;
+            border: 3px solid black;
             float: right;
             margin-left: 20px;
+            width: 150px;
+            height: 180px;
+            object-fit: cover;
         }
         .contact-info {
-            text-align: left; /* Changed to left alignment */
+            text-align: left;
         }
         .contact-info p {
             margin: 5px;
@@ -42,6 +45,7 @@
             color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
+            margin-top: 10px;
         }
         table {
             width: 100%;
@@ -59,23 +63,14 @@
             border-radius: 5px;
             margin-top: 10px;
         }
-        .skills {
+        .skills, .project, .internship, .additional-skills {
             margin-top: 10px;
         }
-        .skills ul {
+        .skills ul, .additional-skills ul {
             list-style-type: none;
             padding: 0;
         }
-        .project {
-            margin-top: 10px;
-        }
-        .project ol {
-            padding-left: 20px;
-        }
-        .internship {
-            margin-top: 10px;
-        }
-        .internship ol {
+        .project ol, .internship ol {
             padding-left: 20px;
         }
         .personal-traits, .hobbies {
@@ -83,11 +78,11 @@
         }
         .declaration {
             margin-top: 10px;
-            text-align: justify; /* Aligning the text to justify */
+            text-align: justify;
         }
         .footer {
             margin-top: 20px;
-            text-align: left; /* Aligning the text to the left */
+            text-align: left;
         }
     </style>
 </head>
@@ -96,15 +91,20 @@
         <div class="header">
             <h1>Resume | Madhu Mohan Vamsi Gurrala</h1>
         </div>
-        <img class="image" src="https://media.licdn.com/dms/image/D5603AQFSugk87I2E-Q/profile-displayphoto-shrink_800_800/0/1676895292013?e=2147483647&v=beta&t=4pvQyegLyd4w4_vAfGZcazsFTIP8zJclfetKnXnn9ds" alt="Madhu Mohan Vamsi Gurrala" width="200" height="250">
+        <img class="image" src="https://media.licdn.com/dms/image/v2/D5603AQHAfCJyK3yegw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724479308985?e=1729728000&v=beta&t=6Fyt2bPK0XYbJ1chymCHsN4A_KrRRlxnPXV2cAzU65c" alt="Madhu Mohan Vamsi Gurrala">
         <div class="contact-info">
+            <p><b>Name:</b> Madhu Mohan Vamsi Gurrala</p>
+            <p><b>Address:</b> H No 20-117/3, Milatry Nagar, Kothakota, Anakapalli, AP, India – 531114</p>
             <p><b>Mobile No:</b> +91 9491232834</p>
-            <p><b>E-mail:</b> madhumohanvamsi35@gmail.com</p>
+            <p><b>E-mail:</b> <a href="mailto:madhumohanvamsi35@gmail.com">madhumohanvamsi35@gmail.com</a></p> 
+            <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/madhu-mohan-vamsi-gurrala-83ab71202/">Madhu Mohan Vamsi Gurrala</a></p>
+            <p><b>GitHub:</b> <a href="https://github.com/MadhuMohanVamsiGurrala">MadhuMohanVamsiGurrala</a></p>
+            <p><b>Blogspot:</b> <a href="https://www.blogger.com/profile/02556685377758593077">Madhu Mohan Vamsi</a></p>
         </div>
         <hr>
         <div class="professional-profile">
             <span class="section-title">Professional Profile:</span>
-            <p>Passionate and Motivated MCA student, driven by a profound love for technology and its limitless possibilities. I thrive on problem solving and innovation, and I'm dedicated to expanding my knowledge and skills in the dynamic world of computer science. Eager to contribute my expertise to projects that challenge and inspire me, and to stay at the forefront of technological advancements.</p>
+            <p>Passionate and diligent fresher with a Master's degree in Computer Applications and a wealth of knowledge in database administration, UI design, and programming. Experienced in project management with a thorough understanding of data-driven techniques. Enthusiastic about utilizing cutting-edge data science methods and web development to solve complex problems and drive innovation.</p>
         </div>
         <div class="section-title">Educational Qualification:</div>
         <table>
@@ -140,7 +140,7 @@
                 <td>Intermediate (MPC)</td>
                 <td>Don Bosco College, Pedaboddepalli</td>
                 <td>Andhra Pradesh Board of Intermediate Education</td>
-                <td>2016-1018</td>
+                <td>2016-2018</td>
                 <td>94%</td>
             </tr>
             <tr>
@@ -157,76 +157,83 @@
                 <li><b>MS Tools:</b> MS Word, MS Excel, MS Power Point</li>
                 <li><b>Programming Languages:</b> Java, Python, C, R</li>
                 <li><b>Database Management:</b> SQL, PL/SQL</li>
-                <li><b>UI Technologies:</b> HTML, CSS, JS</li>
+                <li><b>UI Technologies:</b> HTML5, CSS3, JS, ReactJS</li>
                 <li><b>Tools:</b> Visual Studio Code, Jupyter Notebook, Eclipse</li>
                 <li><b>Operating Systems:</b> Windows</li>
                 <li><b>Domain of Interest:</b> Machine Learning, Data Science, Web Development</li>
             </ul>
         </div>
+        <div class="section-title">Professional Experience (Internships):</div>
+        <div class="internship">
+            <ol>
+                <li><b>Exposys Data Labs – Data Science Intern | Apr 2023 – May 2023</b></li>
+                <p>Enhanced prediction accuracy by developing and refining regression models, and ensured high-quality datasets through data preprocessing and cleaning. Collaborated with senior data scientists to improve model performance using advanced statistical methods.</p>
+                <ul>
+                    <li>Regression models were developed and improved to improve prediction accuracy.</li>
+                    <li>Preprocessing and data cleaning were done in order to ensure high-quality datasets.</li>
+                    <li>Worked in concert with more experienced data scientists to improve model performance through sophisticated statistical methods.</li>
+                </ul>
+                <p><b>Exposys Data Labs Internship:</b> <a href="https://github.com/MadhuMohanVamsiGurrala/Exposys_Data_Labs_Internship">Click Here:</a></p>
+                <br>
+                <li><b>YHills – Data Science Intern | Jul 2023 – Sep 2023</b></li>
+                <p>Implemented machine learning algorithms for consumer behavior forecasting and business decision-making. Analyzed large datasets to extract key trends and insights, leading to improved project outcomes.</p>
+                <ul>
+                    <li>Handled a complex capstone project with a machine learning and data analysis focus.</li>
+                    <li>Machine learning algorithms have been implemented into practice to forecast consumer behavior and enhance corporate decision-making.</li>
+                    <li>Large datasets were analyzed to identify important trends and insights that improved project results.</li>
+                </ul>
+                <p><b>YHills Internship:</b> <a href="https://github.com/MadhuMohanVamsiGurrala/YHills_Internship">Click Here:</a></p>
+            </ol>
+        </div>
         <div class="section-title">Academic Project:</div>
         <div class="project">
             <ol>
                 <li><b>Predictive Models for Bug Fixing Time: An In-depth Analysis with Hidden Markov Model.</b></li>
-                <p>This project explores bug-fixing time prediction and introduces an HMM based temporal sequence activity model, comparing it with other models like MNB, RFC, and SVM. Experiments using Firefox bug reports provide insights into model effectiveness for predicting bug-fixing time in software development.</p>
+                <p>This project explores predictive models for estimating bug-fixing time in software development. It proposes a Hidden Markov Model (HMM)-based approach and evaluates other algorithms like Multinomial Naive Bayes, Random Forest, and Support Vector Machines. Using the Firefox bugs dataset, the study conducts experiments to assess each model's effectiveness. The research aims to provide insights that can help development teams improve their bug-fixing time estimation and project management.</p>
+                <ul>
+                    <li>Used the Hidden Markov Model (HMM) to forecast how long it will take to correct bugs in software development.</li>
+                    <li>Performed a Comparison analysis using models like linear and Non-Linear Support Vector Machine (SVM), Random Forest Classifier (RFC), and Multinomial Naive Bayes (MNB).</li>
+                    <li>Achieved a significant improvement in prediction accuracy using HMM, validated with Firefox bug reports.</li>
+                </ul>
+                <p><b>To see this project:</b> <a href="https://github.com/MadhuMohanVamsiGurrala/Comparative-Analysis-of-Bug-Fixing-Time-Prediction-Models-Hidden-Markov-Model-and-Beyond">Click Here:</a></p>
             </ol>
         </div>
-        <div class="section-title">Certifications:</div>
-        <ul>
-            <li>Programming in JAVA in NPTEL with 80%</li>
-            <li>Cloud Computing and Distributed Systems in NPTEL with 79%</li>
-            <li>IIOT in NPTEL with 80%</li>
-            <li>Data Analytics with Python in NPTEL with 80%</li>
-            <li>Database Foundations in Oracle Academy</li>
-            <li>PL/SQL Database Programming in Oracle Academy</li>
-            <li>Machine Learning in AWS</li>
-            <li>Fundamentals of Data Analytics in Future Skills Prime</li>
-            <li>Developer Program in Accenture</li>
-            <li>Basics of Python in APSSDC</li>
-            <li>Python Programming in APSSDC and Pantech e learning</li>
-            <li>Data Analytics with Python in IndiZeal Academy</li>
-            <li>Data Science in YHills</li>
-        </ul>
-        <div class="section-title">Internships:</div>
-        <div class="internship">
-            <ol>
-                <li><b>Exposys Data Labs – Data Science</b> (26-04-2023 to 25-05-2023)</li>
-                <p>In this, Data science intern skilled in selecting the most suitable regression models (e.g., linear, polynomial, ridge, lasso) and assessing their performance using regression metrics such as R-squared, mean squared error (MSE), and mean absolute error (MAE).</p>
-                <li><b>YHills – Data Science </b> (01-07-2023 to 31-08-2023)</li>
-                <p>In this, as a data science intern, executed a multifaceted capstone project that seamlessly integrated classification models (e.g., logistic regression, decision trees) and regression models (e.g., linear, ridge), leading to enriched data-driven insights and impactful results in predictive accuracy and decision-making.</p>
-            </ol>
+        <div class="section-title">Additional Skills:</div>
+        <div class="additional-skills">
+            <ul>
+                <li><b>Data Visualization:</b> Expertise in creating insightful visualizations with tools like Matplotlib, Seaborn, and Tableau.</li>
+                <li><b>Statistical Analysis:</b> Proficient in applying statistical methods for data analysis.</li>
+                <li><b>Machine Learning:</b> Hands-on experience with supervised and unsupervised learning algorithms.</li>
+                <li><b>Web Development:</b> Strong understanding of frontend technologies and web development frameworks.</li>
+                <li><b>Communication:</b> Effective communication and interpersonal skills, with a proven ability to collaborate in team environments.</li>
+            </ul>
         </div>
         <div class="section-title">Personal Traits:</div>
-        <ul class="personal-traits">
-            <li>Good written & communication skills</li>
-            <li>Multitasking skills</li>
-            <li>Punctuality</li>
-            <li>Problem solving skills</li>
-            <li>Confident and determined</li>
-        </ul>
+        <div class="personal-traits">
+            <ul>
+                <li><b>Quick Learner:</b> Adaptable to new technologies and methodologies.</li>
+                <li><b>Problem Solver:</b> Strong analytical skills to troubleshoot and solve complex issues.</li>
+                <li><b>Team Player:</b> Collaborates effectively with team members to achieve goals.</li>
+                <li><b>Detail-Oriented:</b> Keen attention to detail, ensuring accuracy and quality in work.</li>
+            </ul>
+        </div>
         <div class="section-title">Hobbies:</div>
-        <ul class="hobbies">
-            <li>Reading Books/Journals</li>
-            <li>Browsing Internet</li>
-            <li>Writing Blogs</li>
-            <li>Practice Coding</li>
-        </ul>
-        <div class="section-title">Personal Profile:</div>
-        <p>
-            <b>Name :</b> Gurrala Madhu Mohan Vamsi <br>
-            <b>Father's Name :</b> Gurrala Srinuvasu <br>
-            <b>Date of Birth :</b> 18-06-2000 <br>
-            <b>Nationality :</b> Indian <br>
-            <b>Religion :</b> Hindu <br>
-            <b>Marital Status :</b> Single <br>
-            <b>Languages Known :</b> Telugu (Mother Tongue), English
-        </p>
+        <div class="hobbies">
+            <ul>
+                <li>Reading technical books and journals</li>
+                <li>Browsing the internet for the latest tech trends</li>
+                <li>Writing technical blogs</li>
+                <li>Practicing competitive coding</li>
+            </ul>
+        </div>
         <div class="section-title">Declaration:</div>
-        <p class="declaration">I hereby declare that the above information given above is true to the best of my knowledge and belief. If any change occurs in the information given I shall inform at once.</p>
+        <div class="declaration">
+            <p>I hereby declare that the information provided above is true to the best of my knowledge. I am confident in my ability to contribute positively to your esteemed organization with my skills and dedication.</p>
+            <p>Place: Kothakota</p>
+            <p>Signature: G M M Vamsi</p>
+        </div>
         <div class="footer">
-            <p><b>Place:</b> Kothakota</p>
-            <p><b>Date:</b> 22-02-2024</p>
-            <p style="text-align: right;"><b>Signature</b></p>
-            <p style="text-align: right;">G M M Vamsi</p>
+            <p>Thank you for considering my application. I look forward to the opportunity to discuss how my skills and experiences align with your needs.</p>
         </div>
     </div>
 </body>
